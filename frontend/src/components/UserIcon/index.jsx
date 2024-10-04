@@ -1,7 +1,8 @@
 import React, { memo } from "react";
 import usePfp from "../../hooks/usePfp";
 import UserDefaultPfp from "./user.svg";
-import WorkspaceDefaultPfp from "./workspace.svg";
+// import WorkspaceDefaultPfp from "./workspace.svg";
+import MarutMonkey from "./marut-monkey-sm.png";
 
 const UserIcon = memo(({ role }) => {
   const { pfp } = usePfp();
@@ -11,7 +12,7 @@ const UserIcon = memo(({ role }) => {
       {role === "user" && <RenderUserPfp pfp={pfp} />}
       {role !== "user" && (
         <img
-          src={WorkspaceDefaultPfp}
+          src={MarutMonkey}
           alt="system profile picture"
           className="flex items-center justify-center rounded-full border border-white/40"
         />

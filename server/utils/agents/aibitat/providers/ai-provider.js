@@ -17,8 +17,11 @@ const { ChatOllama } = require("@langchain/community/chat_models/ollama");
 const { toValidNumber } = require("../../../http");
 const { getLLMProviderClass } = require("../../../helpers");
 
-const DEFAULT_WORKSPACE_PROMPT =
-  "You are a helpful ai assistant who can assist the user and use tools available to help answer the users prompts and questions.";
+// const DEFAULT_WORKSPACE_PROMPT =
+  // "You are a helpful ai assistant who can assist the user and use tools available to help answer the users prompts and questions.";
+
+const DEFAULT_WORKSPACE_PROMPT = 
+  "You are an insurance expert able to help brokers focused on cyber security policies compare policies and answer basic questions."
 
 class Provider {
   _client;
